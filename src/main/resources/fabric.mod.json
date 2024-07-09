@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "warp",
+	"version": "${version}",
+	"name": "Warp",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"xalluna"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/warp/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"alluna.warp.Warp"
+		],
+		"fabric-datagen": [
+			"alluna.warp.WarpDataGenerator"
+		]
+	},
+	"mixins": [
+		"warp.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
